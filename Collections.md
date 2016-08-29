@@ -10,13 +10,13 @@ problems.
 Let's walk through the above mentioned sections. 
 
 ###Section 1. Application Secnarioes
-1.1 Set/HashSet 
+*1.1 Set/HashSet*   
 There is no duplicate elements in a Set/HashSet. Assuming you are counting how many departments in a specific company, you won't want to 
 count the R&D department twice. Using Set/HashSet to can avoid having same elements in your result.   
 1.2 List/ArrayList
 
 ###Section 2. Diff
-1.1 Queue/LinkedList/ArrayDeque
+*1.1 Queue/LinkedList/ArrayDeque*  
 Queue can be implemented as ArrayDeque or LinkedList. 
 
 
