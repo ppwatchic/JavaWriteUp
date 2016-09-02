@@ -3,9 +3,9 @@
 1, Annotation is first added to Java 5.  
 
 2, Java annotations are typically used for the following purposes:  
-    Compiler instructions  
-    Build-time instructions  
-    Runtime instructions    
+* Compiler instructions  
+* Build-time instructions  
+* Runtime instructions    
     
 3, **Build-in** annotations  
   Java comes with three built-in annotations which are used to give the Java compiler instructions. These annotations are:  
