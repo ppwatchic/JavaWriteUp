@@ -13,17 +13,16 @@
   * Override  
   * SuppressWarnings  
   
-Each of these annotations are explained in the following sections.  
+Each of these annotations are explained [here](http://tutorials.jenkov.com/java/annotations.html).  
 
-4, Creating Your Own Annotation
-It is possible to create your own (custom) Java annotations.   
-Annotations are defined in their own file, just like a Java class or interface.   
+4, Creating Your Own Annotation  
+It is possible to create your own custom Java annotations.
+Annotations are defined in their own file, just like a Java class or interface.
 Here is custom Java annotation example:
 ```
 @interface MyAnnotation {
 
     String   value();
-
     String   name();
     int      age();
     String[] newNames();
@@ -47,19 +46,18 @@ import java.lang.annotation.RetentionPolicy;
 }
 ```  
 Notice the **@Retention** annotation added above the `MyAnnotation` definition:
-
 `@Retention(RetentionPolicy.RUNTIME)`  
-This is what signals to the Java **compiler** and **JVM** that the annotation should be available via reflection at runtime.  
+This is what signals to the **Java compiler** and **JVM** that the annotation should be available via reflection at runtime.  
 Accessing annotations at runtime is covered in [Java Reflection and Annotations](http://tutorials.jenkov.com/java-reflection/annotations.html) tutorial,   
 which is part of Java Reflection Tutorial.
 
 The RetentionPolicy class contains two more values you can use:  
 
-**RetentionPolicy.CLASS** means that the annotation is stored in the `.class` file, but not available at runtime.   
+**RetentionPolicy.CLASS** means that the annotation is stored in the `.class` file, but not available at runtime.  
 This is the default retention policy, if you do not specify any retention policy at all.
 
 **RetentionPolicy.SOURCE** means that the annotation is only available in the source code, 
-and not in the `.class` files and not a runtime. If you create your own annotations for use with build tools that scan the code, 
+and not in the `.class` files and not a runtime. If you create your own annotations for use with build tools that scan the code,
 you can use this *retention* policy. That way the `.class` files are not polluted unnecessarily.
 
 6, **@Target**  
