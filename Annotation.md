@@ -8,7 +8,8 @@
     Runtime instructions    
     
 3, **Build-in** annotations  
-  Java comes with three built-in annotations which are used to give the Java compiler instructions. These annotations are: * Deprecated  
+  Java comes with three built-in annotations which are used to give the Java compiler instructions. These annotations are:  
+  * Deprecated  
   * Override  
   * SuppressWarnings  
   
@@ -30,7 +31,7 @@ Here is custom Java annotation example:
 }
 ```
   
-5, **@Retention**
+5, **@Retention**  
 You can specify for your custom annotation if it should be available at runtime, for inspection via reflection.   
 You do so by annotating your annotation definition with the **@Retention** annotation. Here is how that is done:
 ``` 
@@ -61,7 +62,7 @@ This is the default retention policy, if you do not specify any retention policy
 and not in the `.class` files and not a runtime. If you create your own annotations for use with build tools that scan the code, 
 you can use this *retention* policy. That way the `.class` files are not polluted unnecessarily.
 
-6, **@Target**
+6, **@Target**  
 You can specify which Java elements your custom annotation can be used to annotate.   
 You do so by annotating your annotation definition with the **@Target** annotation.   
 Here is a **@Target** Java annotation example:
@@ -93,5 +94,5 @@ The TYPE target means any type. A type is either a class, interface, enum or ann
 
 
 ##Reference 
-1, [Java Annotations by Jakob Jenkov] (http://tutorials.jenkov.com/java/annotations.html) 
+1, [Java Annotations by Jakob Jenkov] (http://tutorials.jenkov.com/java/annotations.html)   
 2, source code for [java.lang.annotation.ElementType](http://grepcode.com/file/repository.grepcode.com/java/root/jdk/openjdk/6-b27/java/lang/annotation/ElementType.java#ElementType%5B%5D).
