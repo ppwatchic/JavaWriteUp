@@ -1,16 +1,19 @@
 ##Java Annotation
 
 1, Annotation is first added to Java 5.  
+
 2, Java annotations are typically used for the following purposes:  
     Compiler instructions  
     Build-time instructions  
     Runtime instructions    
+    
 3, **Build-in** annotations  
-  Java comes with three built-in annotations which are used to give the Java compiler instructions. These annotations are:   
-  * Deprecated  
+  Java comes with three built-in annotations which are used to give the Java compiler instructions. These annotations are: * Deprecated  
   * Override  
-  * SuppressWarnings    
+  * SuppressWarnings  
+  
 Each of these annotations are explained in the following sections.  
+
 4, Creating Your Own Annotation
 It is possible to create your own (custom) Java annotations.   
 Annotations are defined in their own file, just like a Java class or interface.   
@@ -26,6 +29,7 @@ Here is custom Java annotation example:
 
 }
 ```
+  
 5, **@Retention**
 You can specify for your custom annotation if it should be available at runtime, for inspection via reflection.   
 You do so by annotating your annotation definition with the **@Retention** annotation. Here is how that is done:
