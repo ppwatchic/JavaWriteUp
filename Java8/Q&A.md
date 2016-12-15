@@ -57,31 +57,31 @@ Functional Interface is also know as SAM Interface because it contains only one 
 **Q6.** Is it possible to define our own Functional Interface?   
 Yes, it is possible to define our own Functional Interfaces. We use Java SE 8’s @FunctionalInterface annotation to mark an interface as Functional Interface.
 
-**Q7.** What is @FunctionalInterface? What are the rules to define a Functional Interface?
-It is an annotation.  
-We need to follow these rules to define a Functional Interface:
+**Q7.** What is @FunctionalInterface? What are the rules to define a Functional Interface?  
+It is an annotation.   
+We need to follow these rules to define a Functional Interface:  
 * Define an interface with one and only one abstract method.
 * We cannot define more than one abstract method.
 * Use @FunctionalInterface annotation in interface definition.
 * We can define any number of other methods like Default methods, Static methods.
 * If we override java.lang.Object class’s method as an abstract method, which does not count as an abstract method.
 
-**Q8.** Is @FunctionalInterface annotation mandatory to define a Functional Interface?
+**Q8.** Is @FunctionalInterface annotation mandatory to define a Functional Interface?  
 It is not mandatory to define a Functional Interface with @FunctionalInterface annotation. If we don’t want, We can omit this annotation. However, if we use it in Functional Interface definition, Java Compiler forces to use one and only one abstract method inside that interface.
 
-**Q9.** What is the use of @FunctionalInterface annotation? Why do we need Functional Interfaces in Java?
+**Q9.** What is the use of @FunctionalInterface annotation? Why do we need Functional Interfaces in Java?  
 The type of a Java SE 8’s Lambda Expression is a Functional Interface. Whereever we use Lambda Expressions that means we are using Functional Interfaces.
 
-**Q10.** When do we go for Java 8 Stream API? Why do we need to use Java 8 Stream API in our projects?
-When we want perform Database like Operations. For instance, we want perform groupby operation, orderby operation etc.  
-When want to Perform operations Lazily.  
-When we want to write Functional Style programming.  
-When we want to perform Parallel Operations.  
-When want to use Internal Iteration.  
-When we want to perform Pipelining operations.  
-When we want to achieve better performance.  
+**Q10.** When do we go for Java 8 Stream API? Why do we need to use Java 8 Stream API in our projects?  
+* When we want perform Database like Operations. For instance, we want perform groupby operation, orderby operation etc.  
+* When want to Perform operations Lazily.  
+* When we want to write Functional Style programming.  
+* When we want to perform Parallel Operations.  
+* When want to use Internal Iteration.  
+* When we want to perform Pipelining operations.  
+* When we want to achieve better performance.  
 
-**Q11.** Explain Differences between Collection API and Stream API?
+**Q11.** Explain Differences between Collection API and Stream API?  
 |No.|Collection API|Stream API|
 |---|---|---|
 |1.	|It’s available since Java |It is introduced in Java SE8|
