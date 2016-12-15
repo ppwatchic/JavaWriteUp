@@ -1,30 +1,31 @@
 **Q1.** Java SE 8 New Features?  
-Lambda Expressions  
-Functional Interfaces  
-Stream API  
-Date and Time API  
-Interface Default Methods and Static Methods  
-Spliterator  
-Method and Constructor References  
-Collections API Enhancements  
-Concurrency Utils Enhancements  
-Fork/Join Framework Enhancements  
-Internal Iteration  
-Parallel Array and Parallel Collection Operations  
-Optional  
-Type Annotations and Repeatable Annotations  
-Method Parameter Reflection    
-Base64 Encoding and Decoding  
-IO and NIO2 Enhancements  
-Nashorn JavaScript Engine  
-javac Enhancements  
-JVM Changes  
-Java 8 Compact Profiles: compact1,compact2,compact3  
-JDBC 4.2  
-JAXP 1.6  
-Java DB 10.10  
-Networking  
-Security Changes  
+**A1.** 
+* Lambda Expressions  
+* Functional Interfaces  
+* Stream API  
+* Date and Time API  
+* Interface Default Methods and Static Methods  
+* Spliterator  
+* Method and Constructor References  
+* Collections API Enhancements  
+* Concurrency Utils Enhancements  
+* Fork/Join Framework Enhancements  
+* Internal Iteration  
+* Parallel Array and Parallel Collection Operations  
+* Optional  
+* Type Annotations and Repeatable Annotations  
+* Method Parameter Reflection    
+* Base64 Encoding and Decoding  
+* IO and NIO2 Enhancements  
+* Nashorn JavaScript Engine  
+* javac Enhancements  
+* JVM Changes  
+* Java 8 Compact Profiles: compact1,compact2,compact3  
+* JDBC 4.2  
+* JAXP 1.6  
+* Java DB 10.10  
+* Networking  
+* Security Changes  
 
 **Q2.** Advantages of Java SE 8 New Features?  
 More Concise and Readable code  
@@ -86,7 +87,7 @@ Let's explain it in the table.
 
 | No. | Collection API | Stream API |
 | ---- | ---- | ---- |
-| 1.	| It’s available since Java | It is introduced in Java SE8 |
+| 1.	| It’s available since Java 1.2 | It is introduced in Java SE8 |
 | 2.	| It is used to store Data(A set of Objects).	| It is used to compute data(Computation on a set of Objects). |
 | 3.	| We can use both Spliterator and Iterator to iterate elements.	| We can use both Spliterator and Iterator to iterate elements. |
 | 4.	| It is used to store limited number of Elements.	 | It is used to store either Limited or Infinite Number of Elements.|
@@ -97,14 +98,51 @@ Let's explain it in the table.
 
 
 **Q12.** What is Spliterator in Java SE 8?   
-Differences between Iterator and Spliterator in Java SE 8?
+Differences between Iterator and Spliterator in Java SE 8?  
+Spliterator stands for Splitable Iterator. It is newly introduced by Oracle Corporation as part Java SE 8.
+Like Iterator and ListIterator, It is also one of the Iterator interface.  
+
+| NO. |	SPLITERATOR	| ITERATOR |
+| --- | --- | --- |
+| 1.	| It is introduced in Java SE 8.	| It is available since Java 1.2.|
+| 2.	| Splitable Iterator	| Non-Splitable Iterator |
+| 3.	| It is used in Stream API.	| It is used for Collection API. | 
+| 4.	| It uses Internal Iteration concept to iterate Streams.	| It uses External Iteration concept to iterate Collections. |
+| 5.	| We can use Spliterator to iterate Streams in Parallel and Sequential order.	| We can use Spliterator to iterate Collections only in Sequential order.|
+| 6.	| We can get Spliterator by calling spliterator() method on Stream Object.	| We can get Iterator by calling iterator() method on Collection Object. |
+| 7.	| Important Method: tryAdvance()	| Important Methods: next(), hasNext() |
 
 **Q13.** What is Optional in Java 8?  
-What is the use of Optional?  
-Advantages of Java 8 Optional?
+What is the use of Optional?   
+Advantages of Java 8 Optional?  
+**Optional:**
+Optional is a final Class introduced as part of Java SE 8. It is defined in java.util package.  
+
+It is used to represent optional values that is either exist or not exist. It can contain either one value or zero value. If it contains a value, we can get it. Otherwise, we get nothing.
+
+It is a bounded collection that contains at most one element only. It is an alternative to “null” value.
+
+Main Advantage of Optional is: 
+* It is used to avoid null checks.
+* It is used to avoid “NullPointerException”.
 
 **Q14.** What is Type Inference? 
-Is Type Inference available in older versions like Java 7 and Before 7 or it is available only in Java SE 8?
+Is Type Inference available in older versions like Java 7 and Before 7 or it is available only in Java SE 8?  
+Type Inference means determining the Type by compiler at compile-time.  
+It is not new feature in Java SE 8. It is available in Java 7 and before Java 7 too.  
+Before Java 7:  
+Let us explore Java arrays. Define a String of Array with values as shown below: 
+`String str[] = { "Java 7", "Java 8", "Java 9" };`  
+Here we have assigned some String values at right side, but not defined it’s type. Java Compiler automatically infers it’s type and creates a String of Array.
+Java 7:  
+Oracle Corporation has introduced “Diamond Operator” new feature in Java SE 7 to avoid unnecessary Type definition in Generics.
+`Map<String,List<Customer>> customerInfoByCity = new HashMap<>();`
+Here we have not defined Type information at right side, simply defined Java SE 7’s Diamond Operator “”.
+
+Java SE 8: 
+Oracle Corporation has enhanced this Type Inference concept a lot in Java SE 8. We use this concept to define Lambda Expressions, Functions, Method References etc. 
+`Integer add = (a,b) -> a + b;`
+Here Java Compiler observes the type definition available at left-side and determines the type of Lambda Expression parameters a and b is Integer.
 
 **Q15.** What is Internal Iteration in Java SE 8?
 
