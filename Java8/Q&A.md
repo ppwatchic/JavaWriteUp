@@ -88,12 +88,12 @@ Let's explain it in the table.
 | ---- | ---- | ---- |
 | 1.	| It’s available since Java | It is introduced in Java SE8 |
 | 2.	| It is used to store Data(A set of Objects).	| It is used to compute data(Computation on a set of Objects). |
-3.	We can use both Spliterator and Iterator to iterate elements.	We can use both Spliterator and Iterator to iterate elements.
-4.	It is used to store limited number of Elements.	It is used to store either Limited or Infinite Number of Elements.
-5.	Typically, it uses Internal Iteration concept to iterate Elements.	It uses External Iteration to iterate Elements.
-6.	Collection Object is constructed Eagerly.	Stream Object is constructed Lazily.
-7.	We add elements to Collection object only after it is computed completely.	We can add elements to Stream Object without any prior computation. That means Stream objects are computed on-demand.
-8.	We can iterate and consume elements from a Collection Object at any number of times.	We can iterate and consume elements from a Stream Object only once.
+| 3.	| We can use both Spliterator and Iterator to iterate elements.	| We can use both Spliterator and Iterator to iterate elements. |
+| 4.	| It is used to store limited number of Elements.	 | It is used to store either Limited or Infinite Number of Elements.|
+| 5.	| Typically, it uses Internal Iteration concept to iterate Elements.	| It uses External Iteration to iterate Elements.|
+| 6.	| Collection Object is constructed Eagerly.	| Stream Object is constructed Lazily.| 
+| 7.	| We add elements to Collection object only after it is computed completely.	| We can add elements to Stream Object without any prior computation. That means Stream objects are computed on-demand.|
+| 8.	| We can iterate and consume elements from a Collection Object at any number of times.	|We can iterate and consume elements from a Stream Object only once.|
 
 
 **Q12.** What is Spliterator in Java SE 8?   
