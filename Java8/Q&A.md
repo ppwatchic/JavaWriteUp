@@ -83,7 +83,7 @@ The type of a Java SE 8’s Lambda Expression is a Functional Interface. Whereev
 
 **Q11.** Explain Differences between Collection API and Stream API?  
 | No. | Collection API | Stream API |
-|---|---|---|
+| --- | --- | --- |
 | 1.	| It’s available since Java | It is introduced in Java SE8 |
 | 2.	| It is used to store Data(A set of Objects).	| It is used to compute data(Computation on a set of Objects). |
 3.	We can use both Spliterator and Iterator to iterate elements.	We can use both Spliterator and Iterator to iterate elements.
