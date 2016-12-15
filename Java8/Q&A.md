@@ -82,7 +82,8 @@ The type of a Java SE 8’s Lambda Expression is a Functional Interface. Whereev
 * When we want to achieve better performance.  
 
 **Q11.** Explain Differences between Collection API and Stream API?  
-Let's explain it in the table. 
+Let's explain it in the table.  
+
 | No. | Collection API | Stream API |
 | ---- | ---- | ---- |
 | 1.	| It’s available since Java | It is introduced in Java SE8 |
