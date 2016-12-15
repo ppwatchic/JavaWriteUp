@@ -1,4 +1,4 @@
-**Q1.** Java SE 8 New Features?
+**Q1.** Java SE 8 New Features?  
 Lambda Expressions  
 Functional Interfaces  
 Stream API  
@@ -26,7 +26,7 @@ Java DB 10.10
 Networking  
 Security Changes  
 
-**Q2.** Advantages of Java SE 8 New Features?
+**Q2.** Advantages of Java SE 8 New Features?  
 More Concise and Readable code  
 More Reusable code  
 More Testable and Maintainable Code  
@@ -36,11 +36,11 @@ Write Database Like Operations
 Better Performance Applications  
 More Productive code  
 
-**Q3.** What is Lambda Expression?
+**Q3.** What is Lambda Expression?  
 They provide a clear and concise way to represent one method interface using an expression.
 Lambda Expression is a block of code without a name. 
 
-**Q4.** What are the three parts of a Lambda Expression? What is the type of Lambda Expression?
+**Q4.** What are the three parts of a Lambda Expression? What is the type of Lambda Expression?  
 Input parameter(s), An arrow (->) and expression body which generates the result. 
 The Type of a Lambda Expression is a **Functional Interface**.
 
@@ -50,7 +50,7 @@ The Type of a Lambda Expression is a **Functional Interface**.
 This Lambda Expression does not have parameters and does return any results.   
 So it’s type is “java.lang.Runnable” Functional Interface.
 
-**Q5.** What is a Functional Interface? What is SAM Interface?
+**Q5.** What is a Functional Interface? What is SAM Interface?  
 A functional interface is an interface with exactly one abstract method. 
 Functional Interface is also know as SAM Interface because it contains only one abstract method.
 
@@ -82,8 +82,9 @@ The type of a Java SE 8’s Lambda Expression is a Functional Interface. Whereev
 * When we want to achieve better performance.  
 
 **Q11.** Explain Differences between Collection API and Stream API?  
+Let's explain it in the table. 
 | No. | Collection API | Stream API |
-| --- | --- | --- |
+| ---- | ---- | ---- |
 | 1.	| It’s available since Java | It is introduced in Java SE8 |
 | 2.	| It is used to store Data(A set of Objects).	| It is used to compute data(Computation on a set of Objects). |
 3.	We can use both Spliterator and Iterator to iterate elements.	We can use both Spliterator and Iterator to iterate elements.
