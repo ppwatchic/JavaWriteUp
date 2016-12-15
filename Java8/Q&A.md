@@ -12,7 +12,7 @@
 * Fork/Join Framework Enhancements  
 * Internal Iteration  
 * Parallel Array and Parallel Collection Operations  
-* Optional  
+* [Optional](http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)  
 * Type Annotations and Repeatable Annotations  
 * Method Parameter Reflection    
 * Base64 Encoding and Decoding  
