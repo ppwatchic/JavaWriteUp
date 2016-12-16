@@ -112,3 +112,35 @@ Like Iterator and ListIterator, It is also one of the Iterator interface.
 | 6.	| We can get Spliterator by calling spliterator() method on Stream Object.	| We can get Iterator by calling iterator() method on Collection Object. |
 | 7.	| Important Method: tryAdvance()	| Important Methods: next(), hasNext() |
 
+**Q13.** What is Optional in Java 8?  
+What is the use of Optional?   
+Advantages of Java 8 Optional?  
+**Optional:**
+Optional is a final Class introduced as part of Java SE 8. It is defined in java.util package.  
+
+It is used to represent optional values that is either exist or not exist. It can contain either one value or zero value. If it contains a value, we can get it. Otherwise, we get nothing.
+
+It is a bounded collection that contains at most one element only. It is an alternative to “null” value.
+
+Main Advantage of Optional is: 
+* It is used to avoid null checks.
+* It is used to avoid “NullPointerException”.
+
+**Q14.** What is Type Inference?  
+Is Type Inference available in older versions like Java 7 and Before 7 or it is available only in Java SE 8?  
+Type Inference means determining the Type by compiler at compile-time.  
+It is not new feature in Java SE 8. It is available in Java 7 and before Java 7 too.  
+Before Java 7:  
+Let us explore Java arrays. Define a String of Array with values as shown below: 
+`String str[] = { "Java 7", "Java 8", "Java 9" };`  
+Here we have assigned some String values at right side, but not defined it’s type. Java Compiler automatically infers it’s type and creates a String of Array.
+Java 7:  
+Oracle Corporation has introduced “Diamond Operator” new feature in Java SE 7 to avoid unnecessary Type definition in Generics.
+`Map<String,List<Customer>> customerInfoByCity = new HashMap<>();`
+Here we have not defined Type information at right side, simply defined Java SE 7’s Diamond Operator “”.
+
+Java SE 8: 
+Oracle Corporation has enhanced this Type Inference concept a lot in Java SE 8. We use this concept to define Lambda Expressions, Functions, Method References etc. 
+`Integer add = (a,b) -> a + b;`
+Here Java Compiler observes the type definition available at left-side and determines the type of Lambda Expression parameters a and b is Integer.
+
