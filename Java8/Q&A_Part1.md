@@ -6,7 +6,7 @@
 * Date and Time API  
 * Interface Default Methods and Static Methods  
 * Spliterator  
-* Method and Constructor References  
+* Method and [Constructor References](http://www.speakingcs.com/2014/08/constructor-references-in-java-8.html)  
 * Collections API Enhancements  
 * Concurrency Utils Enhancements  
 * Fork/Join Framework Enhancements  
