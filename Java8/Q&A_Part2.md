@@ -1,12 +1,12 @@
-**Q15.** What is Internal Iteration in Java SE 8?
-Before Java 8, We don’t Internal Iteration concept. Java 8 has introduced a new feature known as “Internal Iteration”. Before Java 8, Java Language has only External Iteration to iterate elements of an Aggregated Object like Collections, Arrays etc.  
+**Q15.** What is Internal Iteration in Java SE 8?  
+Before Java 8, We don’t Internal Iteration concept. Java 8 has introduced a new feature known as “Internal Iteration”. Before Java 8, Java Language has only External Iteration to iterate elements of an Aggregated Object like Collections, Arrays etc. Some typical APIs for External Iteration are `hasNext()`, `next()`.    
 Internal Iteration means “Iterating an Aggregated Object elements one by one internally by Java API”. Instead of Java Application do iteration externally, We ask Java API to do this job internally.
 Internal Iteration Example: 
 ```
 import java.util.*;
 public class InternalIterator {
   public static void main(String args[]){
-  List<String> namesList=Arrays.asList("Kathy", "Ping", "Yuan");
+    List<String> namesList=Arrays.asList("Kathy", "Ping", "Yuan");
     namesList.forEach(name -> System.out.println(name));  //Internal Iteration
   }
 }
@@ -37,7 +37,7 @@ External Iteration has the following drawbacks:
 Compare to External Iteration, Internal Iteration has the following advantages:   
 * As it follows Functional Programming style, we can write Declarative Code.  
 * More Readable and concise code.
-* Avoids writing Verbose and Boilerplate code
+* Avoids writing Verbose and Boilerplate code.  
 * No need to iterate elements in Sequential order.
 * It supports Concurrency and Parallelism properly.
 * We can write Parallel code to improve application performance.
@@ -67,31 +67,30 @@ In External Iteration, as Java API does NOT take care about Iterating elements, 
 | 5.	| We can use any number of Stream Intermediate Operations per Statement.	| We can use only one Stream Terminal Operation per Statement. |
 
 **Q23.** Is it possible to provide method implementations in Java Interfaces? If possible, how do we provide them?
-In Java 7 or earlier, It is **not** possible to provide method implementations in Interfaces. Java 8 on-wards, it is possible.  
+In Java 7 or earlier, It is **NOT** possible to provide method implementations in Interfaces. Java 8 onward, it is possible.  
 In Java SE 8, We can provide method implementations in Interfaces by using the following two new concepts:  
 * Default Methods
 * Static Methods
 
 **Q24.** What is a Default Method? Why do we need Default methods in Java 8 Interfaces?
-A Default Method is a method which is implemented in an interface with “default” keyword. It’s new featured introduced in Java SE 8.
+**A.** A Default Method is a method which is implemented in an interface with “default” keyword. It’s new featured introduced in Java SE 8.
 Default methods enable us to add new functionalities to interfaces without breaking the classes that implements that interface.   
 
-We need Default Methods because of the following reasons:
+We need Default Methods because of the following reasons:  
+* It allow us to provide method’s implementation in Interfaces.
+* To add new Functionality to Interface without breaking the Classes which implement that Interface.
+* To provide elegant Backwards Compatibility Feature.
+* To ease of extend the existing Functionality.
+* To ease of Maintain the existing Functionality.
 
-It allow us to provide method’s implementation in Interfaces.
-To add new Functionality to Interface without breaking the Classes which implement that Interface.
-To provide elegant Backwards Compatibility Feature.
-To ease of extend the existing Functionality.
-To ease of Maintain the existing Functionality.
-
-**Q25.** What is a Static Method? Why do we need Static methods in Java 8 Interfaces?
+**Q25.** What is a Static Method? Why do we need Static methods in Java 8 Interfaces?  
 A Static Method is an Utility method or Helper method, which is associated to a class (or interface). It is not associated to any object.  
 We need Static Methods because of the following reasons:   
-We can keep Helper or Utility methods specific to an interface in the same interface rather than in a separate Utility class.
-We do not need separate Utility Classes like Collections, Arrays etc to keep Utility methods.  
-Clear separation of Responsibilities. That is we do not need one Utility class to keep all Utility methods of Collection API like Collections etc.  
-Easy to extend the API.  
-Easy to Maintain the API.    
+* We can keep Helper or Utility methods specific to an interface in the same interface rather than in a separate Utility class.
+* We do not need separate Utility Classes like Collections, Arrays etc to keep Utility methods.  
+* Clear separation of Responsibilities. That is we do not need one Utility class to keep all Utility methods of Collection API like Collections etc.  
+* Easy to extend the API.  
+* Easy to Maintain the API.    
 
 **Q26.** Differences between Functional Programming and Object-Oriented Programming?
 
@@ -132,7 +131,7 @@ Better Performance.
 
 **Q28.** Why do we need new Date and Time API in Java SE 8?  
 Explain how Java SE 8 Data and Time API solves issues of Old Java Date API?  
-We need Java 8’s Date and Time API to develop Highly Performance, Thread-Safe and Highly Scalable Java Applications.  
+**A.** We need Java 8’s Date and Time API to develop Highly Performance, Thread-Safe and Highly Scalable Java Applications.  
 Java 8’s Date and Time API solves all Java’s Old Date API issues by following Immutability and Thread-Safety principles.  
 
 **Q29.** What are the Differences between Java’s OLD Java Date API and Java 8’s Date and Time API?   
