@@ -9,7 +9,7 @@
 * Method and [Constructor References](http://www.speakingcs.com/2014/08/constructor-references-in-java-8.html)  
 * Collections API Enhancements  
 * Concurrency Utils Enhancements  
-* Fork/Join Framework Enhancements  
+* [Fork/Join Framework Enhancements](http://www.javaworld.com/article/2078440/enterprise-java/java-tip-when-to-use-forkjoinpool-vs-executorservice.html)  
 * Internal Iteration  
 * Parallel Array and Parallel Collection Operations  
 * [Optional](http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)  
