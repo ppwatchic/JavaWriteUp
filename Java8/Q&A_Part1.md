@@ -13,7 +13,7 @@
 * Internal Iteration  
 * Parallel Array and Parallel Collection Operations  
 * [Optional](http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)  
-* Type Annotations and Repeatable Annotations  
+* Type Annotations and [Repeatable Annotations](https://blog.idrsolutions.com/2015/03/java-8-repeating-annotation-explained-in-5-minutes/)    
 * Method Parameter Reflection    
 * Base64 Encoding and Decoding  
 * IO and NIO2 Enhancements  
