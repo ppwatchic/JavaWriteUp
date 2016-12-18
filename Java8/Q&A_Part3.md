@@ -62,6 +62,8 @@ public class InitOrder extends A.B{
 ```
 **A2.** Compile time error because if inner class B is not static, class InitOrder can not extends it. 
 
-**Q3.** What counts for a method override? 
+**Q3.** What counts for a method override?  
 **A3.** The ability of a subclass to override a method allows a class to inherit from a superclass whose behavior is "close enough" and then to modify behavior as needed. The overriding method has the same **name**, **number** and **type** of parameters, and **return type** as the method that it overrides. An overriding method can **also** return a **subtype** of the type returned by the overridden method.  
 This subtype is called a covariant return type.
+> Note, at the same time, child cannot reduce the visibility of overriden method of parent's. 
+
