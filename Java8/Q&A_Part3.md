@@ -67,3 +67,7 @@ public class InitOrder extends A.B{
 This subtype is called a covariant return type.
 > Note, at the same time, child cannot reduce the visibility of overriden method of parent's. 
 
+**Q4.** How to use ForkJoinPool?
+**A.** First, create a subclass of `RecursiveTask<V>` for some type `V`. (Or create a subclass of `RecursiveAction`).  
+Second, in the subclass, override the `compute()` method. 
+Third, call the `invoke()` method on the `ForkJoinPool` passing an object of type `RecursiveTask<V>`. 
