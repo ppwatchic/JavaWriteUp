@@ -30,4 +30,7 @@ We can have output:
 in test.
 in test.
 ```
+`m.test()` is treated as `AWithStatic.test()`. Thus there is no `NullPointerException()`. 
+
+
 
