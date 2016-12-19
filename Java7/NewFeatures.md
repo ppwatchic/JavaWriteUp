@@ -31,6 +31,7 @@ try {
 ## Java NIO 2.0 
 1. Introduce Path class which allows to represent any path in OS. 
 2. New File API is also capable of searching for files using wild cards. 
+3. NIO stands for non-blocking IO. 
 
 ## G1 Garbage Collector
 
