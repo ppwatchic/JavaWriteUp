@@ -1,10 +1,22 @@
 ## Topics 
+* Util class
 * Primitive/Wrapping class
 * Exceptions
 * File IO
 * Inheritance (interface and abstract class)
 * Modifiers
 * Initialization order
+
+## Util class
+1. Locale  
+There are 4 ways to create a Locale object. 
+Code snippet: 
+```
+	Locale loc = new Locale("en", "US");	// constructor
+	Locale loc2 = Locale.forLanguageTag("en-US");	// factory method
+	Locale loc3 = new Locale.Builder().setLanguage("en").build();	// Builder
+	Locale loc4 = Locale.ENGLISH;	// Locale constants
+```
 
 ## Primitive/Wrapping class
 ### Integer
