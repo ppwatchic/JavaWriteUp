@@ -1,4 +1,4 @@
-1. Totally 12 topics.  
+## Topics 
 * String class
 * Exception
 * File IO
