@@ -3,7 +3,7 @@
 * Primitive/Wrapping class
 * Exceptions
 * File IO
-* Inheritance (interface and abstract class)
+* Interface and Abstract class
 * Modifiers
 * Initialization order
 
@@ -40,6 +40,31 @@ Code snippet:
     String inputString = "a1b2c3";
     System.out.println(Arrays.toString(inputString.split("\\d")));	// digit
     System.out.println(Arrays.toString(inputString.split("\\d", 2)));	// digit
+```
+
+### Interface
+1. How to access interface constant variable?
+Code snippet: 
+```
+interface DoSomeStuff {
+	public static final int STUFF = 3;
+	
+	void doStuff(int t);
+}
+
+public class TestDeclare {
+
+	public static void main(String[] args) {
+		int x = 5;
+		new TestDeclare().doStuff(x++);
+	}
+	
+	void doStuff(int s) {
+		s += DoSomeStuff.STUFF+ ++s;
+		System.out.println("s " + s);
+	}
+
+}
 ```
 
 ### Abstract class
