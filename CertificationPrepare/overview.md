@@ -1,8 +1,8 @@
 ## Topics 
 * Primitive/Wrapping class
-* Exception
+* Exceptions
 * File IO
-* Inheritance (interface and abstract)
+* Inheritance (interface and abstract class)
 * Modifiers
 * Initialization order
 
@@ -30,3 +30,28 @@ Code snippet:
     System.out.println(Arrays.toString(inputString.split("\\d", 2)));	// digit
 ```
 
+### Abstract class
+1. NumberFormat is an abstract class. It has no public constrcutor; instead use factory method to create an object of this class.   
+Code snippet: 
+```
+	NumberFormat nf = NumberFormat.getInstance(Locale.ITALY);
+	String s = nf.format(123.45);
+	System.out.println(s);
+```
+
+## Exceptions
+1. ParseException
+Code snippet: 
+```
+	NumberFormat numf = NumberFormat.getInstance(Locale.US);
+	Number N;
+	String ns = "123.4567";
+	numf.setMaximumFractionDigits(2);
+		
+	try {
+		N = nf.parse(ns);
+		System.out.println(N);
+	} catch(ParseException ne) {
+		System.out.println("Exception");
+	}
+```
