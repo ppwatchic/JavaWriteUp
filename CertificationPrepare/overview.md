@@ -11,9 +11,9 @@
 Code snippet: 
 ```
     String str= "She sells sea shells.";
-		System.out.println(Arrays.toString(str.split("\\s")));	// space
-		String inputString = "a1b2c3";
-		System.out.println(Arrays.toString(inputString.split("\\d")));	// digit
+    System.out.println(Arrays.toString(str.split("\\s")));	// space
+    String inputString = "a1b2c3";
+    System.out.println(Arrays.toString(inputString.split("\\d")));	// digit
     System.out.println(Arrays.toString(inputString.split("\\d", 2)));	// digit
 ```
 
