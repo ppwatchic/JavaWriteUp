@@ -1,12 +1,25 @@
 ## Topics 
-* String class
+* Primitive/Wrapping class
 * Exception
 * File IO
 * Inheritance (interface and abstract)
 * Modifiers
 * Initialization order
 
-## String 
+## Primitive/Wrapping class
+### Integer
+Integer is immutable object. 
+Code snippet: 
+```
+		Integer x = 100;
+		Integer y = x;
+		x++;    // a new Integer object is constructed 
+		System.out.println(x==101);	// true
+		System.out.println(x==y);	// false
+		System.out.println(y);	// 100
+```
+
+### String 
 1. split() method. 
 Code snippet: 
 ```
