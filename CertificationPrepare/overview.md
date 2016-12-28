@@ -2,7 +2,7 @@
 * Util class
 * Primitive/Wrapping class
 * Exceptions
-* File IO
+* IO/NIO
 * Interface and Abstract class
 * Modifiers
 * Initialization order
@@ -92,3 +92,22 @@ Code snippet:
 		System.out.println("Exception");
 	}
 ```
+
+## ION/NIO
+### [Console](https://docs.oracle.com/javase/7/docs/api/java/io/Console.html)
+1. `System.console()` may return `null`. 
+2. `Java.io.Console` is sinced Java 1.6. 
+
+### Java.io.File
+1. `isDirectory()` to check if the file is a directory. 
+2. `delete()` Deletes the file or directory denoted by this abstract pathname.
+3. `listFiles()` Returns an array of abstract pathnames denoting the files in the directory denoted by this abstract pathname.
+4. `list()` Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname.
+
+### Java.io.file.Files
+1. It can set or get file attributes. 
+
+### Java.io.file.FileStore
+Storage for files. A FileStore represents a storage pool, device, partition, volume, concrete file system or other implementation specific means of file storage. The FileStore for where a file is stored is obtained by invoking the getFileStore method, or all file stores can be enumerated by invoking the getFileStores method.
+
+###
