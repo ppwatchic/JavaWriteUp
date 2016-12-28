@@ -17,6 +17,19 @@ Code snippet:
 	Locale loc3 = new Locale.Builder().setLanguage("en").build();	// Builder
 	Locale loc4 = Locale.ENGLISH;	// Locale constants
 ```
+2. Arrays.sort(Object[] a): Sorts the specified array of objects into ascending order, according to the natural ordering of its elements. All elements in the array must implement the Comparable interface. Furthermore, all elements in the array must be mutually comparable (that is, e1.compareTo(e2) must not throw a ClassCastException for any elements e1 and e2 in the array).
+The above code snippet will throw a `java.lang.ClassCastException`: 
+```Java
+	Object[] myObjects = {
+				new Integer(12),
+				new String("foo"),
+				new Integer(5), 
+				new Boolean(true)
+		};
+	Arrays.sort(myObjects);
+```
+3. NavigableSet is an interface. We cannot `new NavigableSet<>()`. 
+
 
 ## Primitive/Wrapping class
 ### Integer
@@ -41,6 +54,19 @@ Code snippet:
     System.out.println(Arrays.toString(inputString.split("\\d")));	// digit
     System.out.println(Arrays.toString(inputString.split("\\d", 2)));	// digit
 ```
+
+## Exceptions
+### Catch order matters
+when catching exceptions you want to always catch the most specific first and then the most generic. 
+The wrong way below: 
+```
+	catch(Exception e) {
+		System.out.println("Exception");
+	} catch(ArithmeticException ae) {	// We should move this exception before Exception.
+		System.out.println("A Exception");
+	}
+```
+
 
 ### Interface
 1. How to access interface constant variable?
@@ -110,4 +136,10 @@ Code snippet:
 ### Java.io.file.FileStore
 Storage for files. A FileStore represents a storage pool, device, partition, volume, concrete file system or other implementation specific means of file storage. The FileStore for where a file is stored is obtained by invoking the getFileStore method, or all file stores can be enumerated by invoking the getFileStores method.
 
-###
+## Initialization Order
+The correct order of initialisation is:  
+1. Static variable initialisers and static initialisation blocks, in textual order, if the class hasn't been previously initialised.
+2. The super() call in the constructor, whether explicit or implicit.
+3. Instance variable initialisers and instance initialisation blocks, in textual order.
+4. Remaining body of constructor after super().
+
