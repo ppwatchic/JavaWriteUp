@@ -17,5 +17,16 @@ public class Bees {
   }
 }
 ```
-The output will be "1 thrown to main". 
-Reason: main and t1 will compete the lock for go() method and then there is exception. 
+The output will be "1 thrown to main".  There will be actually an `IllegalMonitorStateException` in Java. 
+Reason: go() method didn't own the monitor of t1. 
+
+## Monitor
+Each object in Java is associated with a monitor, which a thread can lock or unlock. Only one thread at a time may hold a lock on a monitor. 
+
+## Synchronized method 
+To make a method synchronized, simply add the synchronized keyword to its declaration. 
+
+## Constructors cannot be synchronized
+
+
+
