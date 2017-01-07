@@ -17,8 +17,16 @@ public class Bees {
   }
 }
 ```
-The output will be "1 thrown to main".  There will be actually an `IllegalMonitorStateException` in Java. 
-Reason: go() method didn't own the monitor of t1. 
+The output will be "1 thrown to main".  There will be actually an `IllegalMonitorStateException` in Java.  
+Reason: go() method didn't own the monitor of t1.   
+One of the correct ways to call wait() of t1 should be:  
+```
+synchronized(t1) {
+  doSomething();
+  t1.wait();
+  
+}
+```
 
 ## Monitor
 Each object in Java is associated with a monitor, which a thread can lock or unlock. Only one thread at a time may hold a lock on a monitor. 
