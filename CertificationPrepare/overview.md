@@ -1,5 +1,6 @@
 ## Topics 
 * Util class
+ * String and StringBuffer
 * Primitive/Wrapping class
 * Exceptions
 * IO/NIO
