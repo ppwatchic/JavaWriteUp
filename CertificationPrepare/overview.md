@@ -4,6 +4,7 @@
 * Exceptions
 * IO/NIO
 * Interface and Abstract class
+* Nested class
 * Modifiers
 * Initialization order
 
@@ -65,6 +66,36 @@ The wrong way below:
 	} catch(ArithmeticException ae) {	// We should move this exception before Exception.
 		System.out.println("A Exception");
 	}
+```
+
+## Nested class
+The Java programming language allows you to define a class within another class. Such a class is called a nested class and is illustrated here:
+```
+class OuterClass {
+    ...
+    class NestedClass {
+        ...
+    }
+}
+```
+Terminology: Nested classes are divided into two categories: **static** and **non-static**. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
+```
+class OuterClass {
+    ...
+    static class StaticNestedClass {
+        ...
+    }
+    class InnerClass {
+        ...
+    }
+}
+```
+A nested class is a member of its enclosing class. Non-static nested classes (inner classes) have access to other members of the enclosing class, even if they are declared private. Static nested classes **DO NOT** have access to other members of the enclosing class. As a member of the OuterClass, a nested class can be declared private, public, protected, or package private. (Recall that outer classes can only be declared public or package private.)
+
+To create an object for the static nested class, use this syntax:
+```
+OuterClass.StaticNestedClass nestedObject =
+     new OuterClass.StaticNestedClass();
 ```
 
 
