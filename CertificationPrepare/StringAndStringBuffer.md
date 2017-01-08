@@ -9,4 +9,13 @@ Both false.
 
 Reason: There is no overriden `equals()` for Stringbuffer class. 
 
-
+## What is the output?
+```
+	String s1 = null;
+		String s2 = null;
+		if (s1 == s2)
+			System.out.print("A");
+		if (s1.equals(s2))
+			System.out.print("B");
+   ```
+A and then an java.lang.NullPointerException. 
