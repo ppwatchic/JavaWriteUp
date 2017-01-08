@@ -12,10 +12,11 @@ Reason: There is no overriden `equals()` for Stringbuffer class.
 ## What is the output?
 ```
 	String s1 = null;
-		String s2 = null;
-		if (s1 == s2)
-			System.out.print("A");
-		if (s1.equals(s2))
-			System.out.print("B");
+	String s2 = null;
+	if (s1 == s2)
+		System.out.print("A");
+	if (s1.equals(s2))	// Exception Here
+		System.out.print("B");
    ```
 A and then an java.lang.NullPointerException. 
+Reason: `s1` is null then there is exception when it invokes any method on String class. 
