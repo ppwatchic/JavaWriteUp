@@ -30,12 +30,12 @@ Reason: `s1` is null then there is exception when it invokes any method on Strin
 		System.out.print(m.start()+" "+m.group());
 	}
 ```
-**Output**: `1 b345 f0`. 
-**Explanation**: 
-* `[a-f]`: a through f (both inclusive). 
-* `\\d`: a digit 0-9. 
-* `+`: one of ther greedy quantifiers. one or more times. 
-* For `start()` of Matcher class, it starts from **1**.   
+ **Output**: `1 b345 f0`.   
+ **Explanation**:   
+ * `[a-f]`: a through f (both inclusive). 
+ * `\\d`: a digit 0-9. 
+ * `+`: one of ther greedy quantifiers. one or more times. 
+ * For `start()` of Matcher class, it starts from **1**.   
 
 2. Why Pattern doesn't have a public constructor, only static `compile(...)` method? 
 **Reason**:   
