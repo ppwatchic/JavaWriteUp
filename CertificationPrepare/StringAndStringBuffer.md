@@ -35,4 +35,17 @@ Reason: `s1` is null then there is exception when it invokes any method on Strin
 * `[a-f]`: a through f (both inclusive). 
 * `\\d`: a digit 0-9. 
 * `+`: one of ther greedy quantifiers. one or more times. 
-* For `start()` of Matcher class, it starts from **1**. 
+* For `start()` of Matcher class, it starts from **1**.   
+
+2. Why Pattern doesn't have a public constructor, only static `compile(...)` method. 
+**Reason**: 
+Generally, a class won't have a public constructor for one of three reasons:
+
+ * The class is a utility class and there is no reason to instantiate it (for example, java.lang.Math).  
+ * Instantiation can fail, and a constructor can't return null.  
+ * A static method clarifies the meaning behind what happens during instantiation.  
+
+In the class of Pattern, the third case is applicable--the static compile method is used solely for clarity. Constructing a pattern via new Pattern(..) doesn't make sense from an explanatory point of view, because there's a sophisticated process which goes on to create a new Pattern. To explain this process, the static method is named compile, because the regex is essentially compiled to create the pattern.
+
+In short, there is no programmatic purpose for making Pattern only constructable via a static method.
+
