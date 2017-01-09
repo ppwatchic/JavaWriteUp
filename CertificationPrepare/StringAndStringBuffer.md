@@ -36,9 +36,8 @@ Reason: `s1` is null then there is exception when it invokes any method on Strin
 * `\\d`: a digit 0-9. 
 * `+`: one of ther greedy quantifiers. one or more times. 
 * For `start()` of Matcher class, it starts from **1**.   
-
 2. Why Pattern doesn't have a public constructor, only static `compile(...)` method. 
-**Reason**: 
+**Reason**:  
 Generally, a class won't have a public constructor for one of three reasons:
 
  * The class is a utility class and there is no reason to instantiate it (for example, java.lang.Math).  
