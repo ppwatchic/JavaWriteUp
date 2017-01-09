@@ -22,12 +22,17 @@ A and then an java.lang.NullPointerException.
 Reason: `s1` is null then there is exception when it invokes any method on String class. 
 
 ## [Pattern](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html)
-1. What does this mean? 
+1. What will be the output? 
 ```
-Pattern p = Pattern.compile("[a-f]\\d+");
-Matcher m = p.matcher("ab34ef0");
+	Pattern p = Pattern.compile("[a-f]\\d+");
+	Matcher m = p.matcher("ab34ef0");
+	while(m.find()) {
+		System.out.print(m.start()+" "+m.group());
+	}
 ```
-Explanation: 
+**Output**: `1 b345 f0`. 
+**Explanation**: 
 * `[a-f]`: a through f (both inclusive). 
 * `\\d`: a digit 0-9. 
 * `+`: one of ther greedy quantifiers. one or more times. 
+* For `start()` of Matcher class, it starts from **1**. 
