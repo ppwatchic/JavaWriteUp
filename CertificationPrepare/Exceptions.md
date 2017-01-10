@@ -41,4 +41,12 @@ Class NullPointerException
 java.lang.NullPointerException is an unchecked exception. 
 > The unchecked exception classes (§11.1.1) are exempted from compile-time checking.  
 
-## Methods that throw unchecked exceptions in Java must delcare it in the method signature
+## Method signature
+1. Methods that throw unchecked exceptions in Java must delcare it in the method signature
+2. Is it ok to declare exceptions in a method signature while the method body doesn't throw any exception?  
+Yes.  There will be no compile errer for the below code snippet. 
+```
+void method() throws Exception {
+	return; 
+}
+```
