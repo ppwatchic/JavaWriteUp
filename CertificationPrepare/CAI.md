@@ -34,14 +34,14 @@ abstract class AbstrClass implements Convertable {
 5. The interface body can contain `abstract methods`, `default methods`, `static methods` and `static class`.  
 6. Question 2: What is wrong with the following interface?  
  ```
-public interface SomethingIsWrong {  
+ public interface SomethingIsWrong {  
 	void aMethod(int aValue) {  
         	System.out.println("Hi Mom");  
     	}  
-}  
- ```
+ }  
+ ```  
  Answer 2: It has a method implementation in it. Only **default or static** methods have implementations.  
- 7. Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces.  
+7. Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces.  
 
 
 ## [Override and Hiding](https://coderanch.com/wiki/659959/Overriding-Hiding) 
