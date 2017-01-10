@@ -5,7 +5,27 @@ I: Interface
 
 ## Interface
 1. Question: Can interface implements interface?  
-Answer: No. Interface can only extends interface(s). 
+Answer: No. Interface can only extends interface(s).   
+2. Question: Can abstract class implements interface?  
+Answer: Yes.   
+Follow-up questions: Does the abstract class have to implement the method(s) of the interface?  
+Answer: Not necessary. Example as below:  
+```
+// Interface 
+public interface Convertable {
+	int convertToInt();
+	char convertToChar();
+}
+
+// Another file 
+abstract class AbstrClass implements Convertable {
+	public abstract void abstrc(); // abstract modifier for the method is A-MUST. 
+	
+	public abstract int convertToInt();	// Error if we missed the abstract modifier 
+	public abstract char convertToChar();	// Error if we missed the public modifier 
+}
+```
+
 
 ## [Override and Hiding](https://coderanch.com/wiki/659959/Overriding-Hiding) 
 The following code snippet:  
