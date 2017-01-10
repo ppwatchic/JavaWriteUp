@@ -28,3 +28,17 @@ Answer:
 ## Class Throwable 
 Class Throwable is the super class of `Error`, and `Exception`. 
 [The Throwable class](http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html) is the superclass of all errors and exceptions in the Java language. Only objects that are instances of this class (or one of its subclasses) are thrown by the Java Virtual Machine or can be thrown by the Java throw statement. Similarly, only this class or one of its subclasses can be the argument type in a catch clause. For the purposes of compile-time checking of exceptions, Throwable and any subclass of Throwable that is not also a subclass of either RuntimeException or Error are regarded as checked exceptions.
+
+## java.lang.NullPointerException
+```
+Class NullPointerException
+
+	java.lang.Object
+		java.lang.Throwable
+			java.lang.Exception
+			java.lang.RuntimeException
+```  
+java.lang.NullPointerException is an unchecked exception. 
+> The unchecked exception classes (§11.1.1) are exempted from compile-time checking.  
+
+## Methods that throw unchecked exceptions in Java must delcare it in the method signature
