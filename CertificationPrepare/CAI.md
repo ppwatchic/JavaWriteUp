@@ -32,15 +32,15 @@ abstract class AbstrClass implements Convertable {
 3. All interface methods are implicitly public if not specified. And all classes that implement this interface can not reduce the visibility level of this method.  
 4. It is ok to declare an interface with `abstract` keyword. 
 5. The interface body can contain `abstract methods`, `default methods`, `static methods` and `static class`.
-6. Question 2: What is wrong with the following interface?  
+6. Question 2: What is wrong with the following interface?    
  ```
  public interface SomethingIsWrong {
     	void aMethod(int aValue) {
         	System.out.println("Hi Mom");
     	}
  }
- ```
-Answer 2: It has a method implementation in it. Only **default or static** methods have implementations.
+ ```   
+Answer 2: It has a method implementation in it. Only **default or static** methods have implementations.  
 
 
 ## [Override and Hiding](https://coderanch.com/wiki/659959/Overriding-Hiding) 
