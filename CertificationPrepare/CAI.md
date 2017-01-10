@@ -15,6 +15,7 @@ Answer: Not necessary. Example as below:
  public interface Convertable {
  	int convertToInt();	// with an implicitly public modifier 
 	char convertToChar();
+	float convertToFloat();
  }
 
 // Another file 
@@ -23,6 +24,7 @@ abstract class AbstrClass implements Convertable {
 	
 	public abstract int convertToInt();	// Error if we missed the abstract modifier 
 	public abstract char convertToChar();	// Error if we missed the public modifier 
+	// It is ok if abstract class didn't implement some method(s) in the interface. 
 }
  ```  
 3. All interface methods are implicitly public if not specified. And all classes that implement this interface can not reduce the visibility level of this method.  
