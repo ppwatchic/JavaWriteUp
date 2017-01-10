@@ -10,7 +10,7 @@ Answer: No. Interface can only extends interface(s).
 Answer: Yes.   
 Follow-up questions: Does the abstract class have to implement the method(s) of the interface?  
 Answer: Not necessary. Example as below:  
-```
+ ```
 // Interface 
 public interface Convertable {
 	int convertToInt();	// with an implicitly public modifier 
@@ -24,7 +24,7 @@ abstract class AbstrClass implements Convertable {
 	public abstract int convertToInt();	// Error if we missed the abstract modifier 
 	public abstract char convertToChar();	// Error if we missed the public modifier 
 }
-```  
+ ```  
 3. All interface methods are implicitly public if not specified. And all classes that implement this interface can not reduce the visibility level of this method.  
 
 
