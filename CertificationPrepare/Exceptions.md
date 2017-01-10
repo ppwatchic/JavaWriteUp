@@ -49,4 +49,13 @@ Yes.  There will be no compile errer for the below code snippet.
 void method() throws Exception {
 	return; 
 }
+
+// Or the following format is OK
+void method1() throws IOException {
+	try {
+		throw new IOException();
+	} catch {
+		System.out.println("in method1()");
+	}
+}
 ```
