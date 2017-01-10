@@ -11,11 +11,11 @@ Answer: Yes.
 Follow-up questions: Does the abstract class have to implement the method(s) of the interface?  
 Answer: Not necessary. Example as below:  
  ```
-	// Interface 
-	public interface Convertable {
-		int convertToInt();	// with an implicitly public modifier 
-		char convertToChar();
-	}
+ // Interface 
+ public interface Convertable {
+ 	int convertToInt();	// with an implicitly public modifier 
+	char convertToChar();
+ }
 
 // Another file 
 abstract class AbstrClass implements Convertable {
