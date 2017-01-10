@@ -1,0 +1,1 @@
+## Can constructor throw exceptions? 
