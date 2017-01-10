@@ -41,6 +41,7 @@ public interface SomethingIsWrong {
 }  
  ```
  Answer 2: It has a method implementation in it. Only **default or static** methods have implementations.  
+ 7. Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces.  
 
 
 ## [Override and Hiding](https://coderanch.com/wiki/659959/Overriding-Hiding) 
