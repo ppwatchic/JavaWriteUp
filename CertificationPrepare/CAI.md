@@ -16,6 +16,8 @@ Answer: Not necessary. Example as below:
  	int convertToInt();	// with an implicitly public modifier 
 	char convertToChar();
 	float convertToFloat();
+	
+	int x = 3; 	// implicite public, static, final
  }
 
 // Another file 
@@ -28,6 +30,8 @@ abstract class AbstrClass implements Convertable {
 }
  ```  
 3. All interface methods are implicitly public if not specified. And all classes that implement this interface can not reduce the visibility level of this method.  
+4. It is ok to declare an interface with `abstract` keyword. 
+5. The interface body can contain `abstract methods`, `default methods`, `static methods` and `static class`.
 
 
 
