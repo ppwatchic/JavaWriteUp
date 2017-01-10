@@ -21,4 +21,5 @@ Java programming language does not require methods to catch or to specify unchec
 Exception in thread "main" java.lang.RuntimeException
 	at exceptions.Father.<init>(Tester.java:6)
 ```
-Question: What is <init>?  
+Question: What is \<init>?  
+Answer: >At the level of the Java Virtual Machine, every constructor written in the Java programming language (JLS §8.8) appears as an instance initialization method that has the special name <init>. This name is supplied by a compiler. Because the name is not a valid identifier, it cannot be used directly in a program written in the Java programming language.
