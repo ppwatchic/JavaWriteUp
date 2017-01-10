@@ -15,3 +15,10 @@ Error: For line 7, default constructor cannot handle IOException throw by implic
 
 ## Uncaught exceptions
 Java programming language does not require methods to catch or to specify unchecked exceptions (**RuntimeException**, **Error**, and their subclasses),
+
+## <Init> in stack trace
+```
+Exception in thread "main" java.lang.RuntimeException
+	at exceptions.Father.<init>(Tester.java:6)
+```
+Question: What is <init>?  
