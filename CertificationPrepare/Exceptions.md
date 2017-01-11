@@ -74,5 +74,5 @@ Code snippet that it is not executed:
 	}
 ```  
 Follow-up question: What is `System.exit(0)` ?  
-Answer: `exit(int stautsCode)` Terminates the currently running Java virtual machine by initiating its shutdown sequence. This method never returns normally. The argument serves as a status code; 0 means exit normally; >0 means something you expected go wrong (like file output stream exception); /<0 means unexpected error (like hardware error). 
+Answer: `exit(int stautsCode)` Terminates the currently running Java virtual machine by initiating its shutdown sequence. This method never returns normally. The argument serves as a status code; 0 means exit normally; >0 means something you expected go wrong (like file output stream exception); <0 means unexpected error (like hardware error). 
 
