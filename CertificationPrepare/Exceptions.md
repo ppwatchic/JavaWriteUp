@@ -76,3 +76,7 @@ Code snippet that it is not executed:
 Follow-up question: What is `System.exit(0)` ?  
 Answer: `exit(int stautsCode)` Terminates the currently running Java virtual machine by initiating its shutdown sequence. This method never returns normally. The argument serves as a status code; 0 means exit normally; >0 means something you expected go wrong (like file output stream exception); <0 means unexpected error (like hardware error). 
 
+## Division by 0
+1. For `int` type, There will be an exception when it is divided by 0. 
+2. For `float` or `double`, because Java\'s float and double types, like pretty much any other language out there (and pretty much any hardware FP unit), implement the IEEE 754 standard for floating point math, which mandates division by zero to return a special "infinity" value. Throwing an exception would actually violate that standard.
+
