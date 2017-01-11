@@ -78,5 +78,24 @@ Answer: `exit(int stautsCode)` Terminates the currently running Java virtual mac
 
 ## Division by 0
 1. For `int` type, There will be an exception when it is divided by 0. 
-2. For `float` or `double`, because Java\'s float and double types, like pretty much any other language out there (and pretty much any hardware FP unit), implement the IEEE 754 standard for floating point math, which mandates division by zero to return a special "infinity" value. Throwing an exception would actually violate that standard.
+2. For `float` or `double` types in Java, like pretty much any other language out there (and pretty much any hardware FP unit), implement the **IEEE 754** standard for floating point math, which mandates division by zero to return a special **infinity** value. Throwing an exception would actually violate that standard.  
+```
+		int i = -4;
+		try {
+		i /= 0;
+		} catch (ArithmeticException e) {
+			System.out.println("Exception");
+		} finally {
+			System.out.println("Int type division by 0: " + i);
+		}
+		
+		double d  = -4.0;
+		try {
+		d /= 0;
+		} catch (ArithmeticException e) {
+			System.out.println("Exception");
+		} finally {
+			System.out.println("Double type division by 0: " + d);
+		}
+```
 
