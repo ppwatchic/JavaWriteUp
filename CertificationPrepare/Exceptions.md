@@ -59,3 +59,20 @@ void method1() throws IOException {
 	}
 }
 ```
+
+## Finally block
+Question: Will finally block always being executed? 
+Answer: It depends. If the thread itself dies, then there is no way to execute finally block. Otherwise it will be executed anyway.  
+Code snippet that it is not executed:  
+```
+	System.out.print("1");
+	try {
+		System.out.print("2");
+		System.exit(0);	    // thread itself exit 
+	} finally {
+		System.out.print("3"); // won't print 3 in the output 
+	}
+```  
+Follow-up question: What is `System.exit(0)` ?  
+Answer: `exit(int stautsCode)` Terminates the currently running Java virtual machine by initiating its shutdown sequence. This method never returns normally. The argument serves as a status code; 0 means exit normally; >0 means something you expected go wrong (like file output stream exception); /<0 means unexpected error (like hardware error). 
+
