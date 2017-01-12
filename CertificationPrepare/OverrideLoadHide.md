@@ -56,4 +56,22 @@ Now, when you have methods with exactly one int and one flost: -
 
 public static void test(int i)
 public static void test(float f)
-Then on invoking using test(1), rule 1 is followed, and smallest possible widening (i.e. the int where no widening is needed at all) is chosen. So 1st method will be invoked.
+Then on invoking using test(1), rule 1 is followed, and smallest possible widening (i.e. the int where no widening is needed at all) is chosen. So 1st method will be invoked.  
+
+## Returned type in overriden method   
+1. An overridden method may have a more specific return type. That is, as long as the new return type is assignable to the return type of the method you are overriding, it's allowed.    
+For example:  
+```
+class ShapeBuilder {
+    ...
+    public Shape build() {
+    ....
+}
+
+class CircleBuilder extends ShapeBuilder{
+    ...
+    @Override
+    public Circle build() {
+    ....
+}
+```
