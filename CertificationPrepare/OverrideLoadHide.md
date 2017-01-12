@@ -13,4 +13,7 @@ class Sub extends Super {
     return i++;
   }
 }
-```
+```  
+
+## Method Signature
+> Note: Definition: Two of the components of a method declaration comprise the method signature—the **method's name** and the **parameter types**.
