@@ -99,3 +99,36 @@ Answer: `exit(int stautsCode)` Terminates the currently running Java virtual mac
 		}
 ```
 
+## Throws clause 
+1. Questions: Will compiler complain if two exceptions (super-class and sub-class relationship) throws at a method?  
+Will it matter for the order of the exceptions?  
+Does it ok if we throw same exceptions twice?  
+```
+
+class Base {
+	void getNext() throws IllegalArgumentException{
+		
+	}
+}
+
+public class OverRidePrac extends Base {
+	
+	@Override
+	//void getNext() throws RuntimeException, IllegalArgumentException{	// OK? Yes
+	//void getNext() throws IllegalArgumentException, RuntimeException{	// OK? Yes
+	void getNext() throws IllegalArgumentException, IllegalArgumentException{	// OK? Yes
+		throw new IllegalArgumentException();
+	}
+
+	public static void main(String[] args) {
+		try {
+			new OverRidePrac().getNext();
+		} catch (RuntimeException re) {
+			System.out.println("RE" );
+		}
+	}
+}
+```
+
+
+
